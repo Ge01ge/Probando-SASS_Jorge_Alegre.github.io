@@ -1,0 +1,33 @@
+/*Anidando */
+ul{
+    list-style: none;
+    padding: 0%;
+    margin: 20px 0px 50px 0px; /*top rigth bottom left*/
+
+    li{
+        display: inline-block;
+    
+        a{
+            /*text-decoration: none;   --> aplicable para todas las propiedades y sus sub elementos*/
+            text: {
+                decoration: none;
+                transform: uppercase;
+            }
+            color: white;
+            padding: 10px;
+            background-color: darkblue;
+            font-size: 10px;
+            border-radius: 20%;
+
+            &:hover {
+                color: salmon;
+                background-color: rgb(238, 232, 232);
+            }
+        }
+    }
+}
+/*ul{}   --> forma normal del css (estilo cascada)*/
+/*ul li{}*/
+/*ul li a{}*/
+
+/*------------------------*/

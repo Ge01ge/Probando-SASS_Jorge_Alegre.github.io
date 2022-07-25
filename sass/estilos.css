@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/* Variables*/
+/* Nueva variable es sumatoria de variables*/
+/*------------------------*/
+/*Generando Modulos*/
+/*Anidando */
+ul {
+  list-style: none;
+  padding: 0%;
+  margin: 20px 0px 50px 0px; /*top rigth bottom left*/
+}
+ul li {
+  display: inline-block;
+}
+ul li a {
+  /*text-decoration: none;   --> aplicable para todas las propiedades y sus sub elementos*/
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px;
+  background-color: darkblue;
+  font-size: 10px;
+  border-radius: 20%;
+}
+ul li a:hover {
+  color: salmon;
+  background-color: rgb(238, 232, 232);
+}
+
+/*ul{}   --> forma normal del css (estilo cascada)*/
+/*ul li{}*/
+/*ul li a{}*/
+/*------------------------*/
+/*@import "menu.css"; --> esa seria la forma para la forma nativa de css. Ojo la carpeta seria CSS y el archivo generado deberia ser _menu.css (solo se menciono en el video quedaria probar)*/
+/*------------------------*/
+/*@mixin y @include (FUNCIONES)*/
+/*los anterior 2 @mixin estan construidos para englobar parametros iguales (no modificables)
+pero tambien lo puedo construir para q los parametros sean de la misma categoria (pero con valores modificables) */
+/*------------------------*/
+/*Dando estilos SCSS*/
+body {
+  background: salmon;
+}
+
+h1 {
+  /*color: hotpink;*/
+  background-color: black;
+  width: 350px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 10px;
+  /*padding: 20px;*/
+  padding: 15px;
+  /*el (padding: 20px) aparece en el h1 y el p. Usando mixin e include lo declaro una vez y los uso donde necesito*/
+  text-decoration: underline;
+  color: salmon;
+  margin-left: 10px;
+  /* puedo ser mas especifico y asignarle parametros variables y diferenciarlos al aplicar el include:
+  @mixin color(¨[$parametro1],[$parametro2]) y al aplicar @include color(pink,[...]);*/
+}
+
+h2 {
+  padding: 15px;
+  /*el (padding: 20px) aparece en el h1 y el p. Usando mixin e include lo declaro una vez y los uso donde necesito*/
+  text-decoration: underline;
+  color: pink;
+  margin-left: 10px;
+  /* puedo ser mas especifico y asignarle parametros variables y diferenciarlos al aplicar el include:
+  @mixin color(¨[$parametro1],[$parametro2]) y al aplicar @include color(pink,[...]);*/
+}
+
+p {
+  width: 450px;
+  /* ej:(pforpiedad FONT) de anidado--> aplicable para todas las propiedades y sus sub elementos*/
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  text-align: justify;
+  /*padding: 20px;*/
+  padding: 15px;
+  /*el (padding: 20px) aparece en el h1 y el p. Usando mixin e include lo declaro una vez y los uso donde necesito*/
+  color: black;
+  margin-left: 10px;
+  /* puedo ser mas especifico y asignarle parametros variables y diferenciarlos al aplicar el include:
+  @mixin color(¨[$parametro1],[$parametro2]) y al aplicar @include color(pink,[...]);*/
+}
+
+/*------------------------*/
+/* Clases y Operadores*/
+.container {
+  /*width: 900px; si tengo una medida fija y la quiero hacer responsive*/
+  width: 100%;
+  margin: auto 0;
+}
+
+.section1 {
+  float: left;
+  width: 77.7777777778%;
+  height: 400px;
+  background-color: aqua;
+}
+
+.aside1 {
+  float: left;
+  width: 22.2222222222%;
+  height: 400px;
+  background-color: gold;
+}
+
+.p1 {
+  width: 90%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+  font-style: italic;
+  text-align: justify;
+  color: black;
+  margin-left: 10px;
+  /* puedo ser mas especifico y asignarle parametros variables y diferenciarlos al aplicar el include:
+  @mixin color(¨[$parametro1],[$parametro2]) y al aplicar @include color(pink,[...]);*/
+}/*# sourceMappingURL=estilos.css.map */
